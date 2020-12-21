@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'sfdsfd Demo',
+      title: 'Treecome 2021',
       theme: ThemeData(
           primarySwatch: Colors.blue,
           textTheme: GoogleFonts.robotoTextTheme(
