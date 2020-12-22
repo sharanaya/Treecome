@@ -228,10 +228,9 @@ class CenteredText extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
-          "Treecome 2021",
+          "Coming Soon",
           style: TextStyle(fontSize: 40, color: Colors.white),
-        ),
-        Padding(
+        ),        Padding(
           padding: const EdgeInsets.all(20.0),
           child: Text(
             "Subscribe to get notification as soon as we launch!",
