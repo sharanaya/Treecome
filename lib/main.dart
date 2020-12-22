@@ -4,9 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'dart:math';
 import 'package:simple_animations/simple_animations.dart';
 import 'package:supercharged/supercharged.dart';
-import "package:charcode/ascii.dart";
 import "package:charcode/html_entity.dart";
-import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 void main() {
   runApp(MyApp());
@@ -46,7 +44,6 @@ class MyHomePage extends StatelessWidget {
         centerTitle: true,
         title: Text(
           "Treecome 2021",
-          style: TextStyle(fontSize: 25),
         ),
       ),
       bottomNavigationBar: SizedBox(
@@ -258,6 +255,7 @@ class CenteredText extends StatelessWidget {
           ),
         ),
       ],
-    ));
+    ),
+    );
   }
 }
