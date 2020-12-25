@@ -6,6 +6,7 @@ import 'package:simple_animations/simple_animations.dart';
 import 'package:supercharged/supercharged.dart';
 import "package:charcode/html_entity.dart";
 import 'package:url_launcher/url_launcher.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -74,12 +75,13 @@ class MyHomePage extends StatelessWidget {
                   ),
                   Text("by", style: TextStyle(color: Colors.white)),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(5,0,5,0),
+                    padding: const EdgeInsets.fromLTRB(5, 0, 5, 0),
                     child: MouseRegion(
                       cursor: SystemMouseCursors.click,
                       child: GestureDetector(
                         onTap: _launchURL,
-                        child: Text("Kartikey",style: TextStyle(color: Colors.white)),
+                        child: Text("Kartikey",
+                            style: TextStyle(color: Colors.white)),
                       ),
                     ),
                   )
@@ -223,38 +225,39 @@ class CenteredText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Text(
-          "Coming Soon",
-          style: TextStyle(fontSize: 40, color: Colors.white),
-        ),        Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Text(
-            "Subscribe to get notification as soon as we launch!",
-            style: TextStyle(color: Colors.white),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            "Coming Soon",
+            style: TextStyle(fontSize: 40, color: Colors.white),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
-          child: Container(
-            width: 500,
-            child: TextFormField(
-              decoration: InputDecoration(
-                hintText: "Email",
-                filled: true,
-                fillColor: Colors.white,
-                enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Text(
+              "Subscribe to get notification as soon as we launch!",
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+            child: Container(
+              width: 500,
+              child: TextFormField(
+                decoration: InputDecoration(
+                  hintText: "Email",
+                  filled: true,
+                  fillColor: Colors.white,
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.white),
+                  ),
                 ),
               ),
             ),
           ),
-        ),
-      ],
-    ),
+        ],
+      ),
     );
   }
 }
