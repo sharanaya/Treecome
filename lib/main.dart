@@ -14,7 +14,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -36,10 +35,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Treecome 2021',
       theme: ThemeData(
-          primarySwatch: primaryGreen,
-          textTheme: GoogleFonts.robotoTextTheme(
-            Theme.of(context).textTheme,
-          )),
+        primarySwatch: primaryGreen,
+        textTheme: GoogleFonts.robotoTextTheme(
+          Theme.of(context).textTheme,
+        ),
+      ),
       home: MyHomePage(),
     );
   }
