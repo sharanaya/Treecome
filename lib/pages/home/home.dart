@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:treecome/widgets/HomeView.dart';
 
 class Home extends StatelessWidget {
@@ -8,11 +9,11 @@ class Home extends StatelessWidget {
       length: 4,
       child: Scaffold(
         appBar: AppBar(
-          leading: IconButton(
-            icon: Icon(Icons.account_circle_outlined),
-            onPressed: () {},
+          leading: SvgPicture.asset(
+            'images/logo.png',
+            semanticsLabel: 'A shark?!',
           ),
-          title: Text('Treecome 2021'),
+          title: Text('Treecome'),
           actions: [
             SizedBox(
               width: 800,
